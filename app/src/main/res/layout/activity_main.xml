@@ -45,8 +45,27 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp">
             <TextView
-                style="@style/NumberButton"
-                android:text="."
+                style="@style/ActionButton"
+                android:id="@+id/btn_ac"
+                android:text="AC"
+                />
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/btn_opn"
+                android:text="("
+                android:textSize="30dp"
+                />
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/btn_cls"
+                android:text=")"
+                android:textSize="30dp"
+                />
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/btn_del"
+                android:textSize="30dp"
+                android:text="/"
                 />
         </LinearLayout>
 
@@ -55,6 +74,34 @@
                android:layout_weight="1"
                android:layout_width="match_parent"
                android:layout_height="0dp">
+
+            <TextView
+                style="@style/NumberButton"
+                android:id="@+id/btn_1"
+                android:textSize="30dp"
+                android:text="1"
+                />
+
+            <TextView
+                style="@style/NumberButton"
+                android:id="@+id/btn_2"
+                android:text="2"
+                android:textSize="30dp"
+                />
+
+            <TextView
+                style="@style/NumberButton"
+                android:id="@+id/btn_3"
+                android:text="3"
+                android:textSize="30dp"
+                />
+
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/btn_um"
+                android:text="*"
+                android:textSize="30dp"
+                />
         </LinearLayout>
 
         <LinearLayout
@@ -62,6 +109,36 @@
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="0dp">
+
+            <TextView
+                style="@style/NumberButton"
+                android:id="@+id/btn_4"
+                android:text="4"
+                android:textSize="30dp"
+                />
+
+            <TextView
+                style="@style/NumberButton"
+                android:id="@+id/btn_5"
+                android:text="5"
+                android:textSize="30dp"
+                />
+
+            <TextView
+                style="@style/NumberButton"
+                android:id="@+id/btn_6"
+                android:text="6"
+                android:textSize="30dp"
+                />
+
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/btn_slo"
+                android:text="+"
+                android:textSize="30dp"
+                />
+
+
         </LinearLayout>
 
         <LinearLayout
@@ -69,6 +146,68 @@
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="0dp">
+
+            <TextView
+                style="@style/NumberButton"
+                android:id="@+id/btn_7"
+                android:text="7"
+                android:textSize="30dp"
+                />
+
+            <TextView
+                style="@style/NumberButton"
+                android:id="@+id/btn_8"
+                android:text="8"
+                android:textSize="30dp"
+                />
+
+            <TextView
+                style="@style/NumberButton"
+                android:id="@+id/btn_9"
+                android:textSize="30dp"
+                android:text="9"
+                />
+
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/btn_min"
+                android:textSize="30dp"
+                android:text="-"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                style="@style/NumberButton"
+                android:id="@+id/btn_dot"
+                android:text=","
+                android:textSize="30dp"
+                />
+
+            <TextView
+                style="@style/NumberButton"
+                android:id="@+id/btn_0"
+                android:text="0"
+                android:textSize="30dp"
+                />
+
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/btn_bck"
+                android:text="Back"
+                />
+
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/btn_rwn"
+                android:text="="
+                android:textSize="30dp"
+                />
         </LinearLayout>
 
     </LinearLayout>
