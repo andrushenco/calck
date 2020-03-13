@@ -1,13 +1,16 @@
 package com.example.a16bicalckbuild04
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.Menu
+import android.view.MenuItem
+import android.view.View
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 import net.objecthunter.exp4j.ExpressionBuilder
 import java.lang.Exception
-import kotlin.math.log
 
 class MainActivity : AppCompatActivity() {
 
@@ -77,7 +80,35 @@ class MainActivity : AppCompatActivity() {
           }
         }
     }
-        //вывод из функции setTextFields из переменной str типа string которая хранит в себе результат ввода пользователя
+
+    //вызов функции создания меню
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.main_menu, menu) // обращаемся к main_menu
+        return true
+    }
+    // вызов функции выбора item (меню)
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.sys2 -> {
+                fun binIntent (view: View) {
+                    val biIntent = Intent (this, binActivity::class.java)
+                    startActivity(biIntent)
+            }
+                true
+            }
+            R.id.sys10 -> {
+                Toast.makeText(applicationContext, "click on share", Toast.LENGTH_LONG).show()
+                return true
+            }
+            R.id.sys16 -> {
+                Toast.makeText(applicationContext, "click on exit", Toast.LENGTH_LONG).show()
+                return true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
+    }
+
+    //вывод из функции setTextFields из переменной str типа string которая хранит в себе результат ввода пользователя
         //которая в свою очереь передает результат в окно ввода math_operation
     fun setTextFields(str: String) {
             //условие на проверку повторной-добавочной математической операции
